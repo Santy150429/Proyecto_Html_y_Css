@@ -22,90 +22,90 @@
       <a href="contacto.html">Contacto</a>
     </nav>
     <div class="header-actions">
-      <a href="#">🔍 Buscar</a>
-      <a href="#">🛒 Carrito</a>
+      <a href="productos.html">🔍 Buscar</a>
+      <a href="contacto.html">🛒 Carrito</a>
     </div>
   </header>
 
   <!-- Contenido Principal -->
   <main class="container">
-    <h1 class="section-title">Catálogo de Productos Ecológicos</h1>
+    <h1 class="section-title">Catálogo de Productos</h1>
 
-    <!-- Barra de Filtros (Flexbox) -->
+    <!-- Barra de Filtros vinculada con IDs -->
     <section class="filters-bar">
-      <button class="filter-btn active">Todos</button>
-      <button class="filter-btn">Hogar</button>
-      <button class="filter-btn">Cuidado Personal</button>
-      <button class="filter-btn">Reutilizables</button>
+      <a href="#todos" class="filter-btn active">Todos</a>
+      <a href="#hogar" class="filter-btn">Hogar</a>
+      <a href="#cuidado" class="filter-btn">Cuidado Personal</a>
+      <a href="#reutilizables" class="filter-btn">Reutilizables</a>
     </section>
 
-    <!-- Grid de Productos -->
-    <div class="product-grid">
+    <!-- Grid de Productos (6 Productos) -->
+    <div class="product-grid" id="todos">
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 1</div>
+      <!-- Producto 1: Hogar -->
+      <article class="card" id="hogar">
+        <img src="../Img/products/cepillo.jpg" alt="Cepillo de Bambú" class="card-img">
         <div class="card-body">
-          <span class="badge">Hogar</span>
           <h3>Cepillo de Bambú</h3>
-          <p class="price">$12.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <p class="price">$12.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 2</div>
+      <!-- Producto 2: Reutilizable -->
+      <article class="card" id="reutilizables">
+        <img src="../Img/products/bolsa.jpg" alt="Bolsa de Tela" class="card-img">
         <div class="card-body">
-          <span class="badge">Reutilizables</span>
-          <h3>Bolsa de Tela Organica</h3>
-          <p class="price">$18.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <h3>Bolsa de Tela Reutilizable</h3>
+          <p class="price">$15.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 3</div>
+      <!-- Producto 3: Cuidado Personal -->
+      <article class="card" id="cuidado">
+        <img src="../Img/products/jabon.jpg" alt="Jabón Artesanal" class="card-img">
         <div class="card-body">
-          <span class="badge">Reutilizables</span>
-          <h3>Termo Inoxidable 750ml</h3>
-          <p class="price">$45.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <h3>Jabón Artesanal Ecológico</h3>
+          <p class="price">$8.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 4</div>
+      <!-- Producto 4: Hogar -->
+      <article class="card" id="hogar">
+        <img src="../Img/products/pitillos.jpg" alt="Kit de Pitillos de Acero" class="card-img">
         <div class="card-body">
-          <span class="badge">Cuidado Personal</span>
-          <h3>Jabón Orgánico de Caléndula</h3>
-          <p class="price">$15.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <h3>Pitillos de Acero Inoxidable</h3>
+          <p class="price">$10.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 5</div>
+      <!-- Producto 5: Cuidado Personal -->
+      <article class="card" id="cuidado">
+        <img src="../Img/products/champu.jpg" alt="Champú Sólido" class="card-img">
         <div class="card-body">
-          <span class="badge">Hogar</span>
-          <h3>Pajitas de Cristal (Set x4)</h3>
-          <p class="price">$22.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <h3>Champú Sólido Natural</h3>
+          <p class="price">$18.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-img-placeholder">Imagen Producto 6</div>
+      <!-- Producto 6: Reutilizable -->
+      <article class="card" id="reutilizables">
+        <img src="../Img/products/termo.jpg" alt="Termo de Acero" class="card-img">
         <div class="card-body">
-          <span class="badge">Hogar</span>
-          <h3>Set de Cubiertos de Bambú</h3>
-          <p class="price">$28.000 COP</p>
-          <a href="#" class="btn btn-card">Añadir al carrito</a>
+          <h3>Termo Térmico Ecológico</h3>
+          <p class="price">$25.000</p>
+          <button class="btn">Agregar al Carrito</button>
         </div>
       </article>
 
     </div>
   </main>
 
-  <!-- Pie de página -->
+  <!-- Pie de Página -->
   <footer class="footer">
     <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
     <div class="footer-links">
