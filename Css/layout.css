@@ -50,21 +50,30 @@
   color: var(--color-text);
 }
 
+/* --- BANNER HERO --- */
 .hero {
-  background-color: var(--color-bg);
-  padding: 3rem 1.5rem;
+  /* Imagen de fondo con filtro claro sobrepuesto para mantener legibilidad */
+  background-image: linear-gradient(rgba(245, 245, 220, 0.75), rgba(245, 245, 220, 0.75)), url('../Img/hero/banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero h1 {
-  font-size: 1.8rem;
-  color: var(--color-dark);
-  margin-bottom: 1rem;
+.hero-content h1 {
+  color: #2e7d32; /* Color verde del título */
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
-.hero p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+.hero-content p {
+  color: #333333;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 
 .container {
