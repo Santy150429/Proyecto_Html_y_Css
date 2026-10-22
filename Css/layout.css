@@ -1,7 +1,5 @@
 
-/* ==========================================
-   LAYOUT GENERAL (Versión Celular Primero)
-   ========================================== */
+/* LAYOUT GENERAL (Versión Celular Primero) */
 
 /* Asegurar altura completa para empujar el footer */
 html, body {
@@ -62,7 +60,7 @@ body {
   color: var(--color-text);
 }
 
-/* --- BANNER HERO --- */
+/*BANNER HERO*/
 .hero {
   /* Imagen de fondo con filtro claro sobrepuesto para mantener legibilidad */
   background-image: linear-gradient(rgba(245, 245, 220, 0.75), rgba(245, 245, 220, 0.75)), url('../Img/hero/banner.png');
@@ -127,9 +125,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ==========================================
-   MEDIA QUERIES (Adaptación para PC)
-   ========================================== */
+/* MEDIA QUERIES (Adaptación para PC) */
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
