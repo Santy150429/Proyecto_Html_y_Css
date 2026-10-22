@@ -3,6 +3,18 @@
    LAYOUT GENERAL (Versión Celular Primero)
    ========================================== */
 
+/* Asegurar altura completa para empujar el footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -80,6 +92,8 @@
   padding: 1.5rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1; /* Hace que el contenido crezca y empuje el footer al fondo */
+  width: 100%;
 }
 
 .section-title {
@@ -99,7 +113,7 @@
   color: #ffffff;
   text-align: center;
   padding: 1.5rem 1rem;
-  margin-top: 2rem;
+  margin-top: auto; /* Mantiene el footer pegado abajo */
 }
 
 .footer-links {
